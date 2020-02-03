@@ -89,6 +89,17 @@
                                     <action selector="resetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="AqF-W4-pXc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-J2-Urg">
+                                <rect key="frame" x="317" y="211" width="47" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="ejy-ZC-GFz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="redTextValue:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="YyK-ab-I3v"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -104,6 +115,8 @@
                             <constraint firstItem="kvv-4M-qO2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="P8f-Fs-niC"/>
                             <constraint firstItem="CfV-1F-Vt7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="PGI-5L-UxC"/>
                             <constraint firstItem="cjM-pR-SJw" firstAttribute="top" secondItem="CfV-1F-Vt7" secondAttribute="bottom" constant="30" id="QLn-DP-2Fc"/>
+                            <constraint firstItem="aUB-J2-Urg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="211" id="YHH-bG-J10"/>
+                            <constraint firstItem="aUB-J2-Urg" firstAttribute="leading" secondItem="CfV-1F-Vt7" secondAttribute="trailing" constant="8" id="Yu3-7d-rjk"/>
                             <constraint firstItem="KaA-GZ-jjw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="aI1-ZN-DsP"/>
                             <constraint firstItem="CfV-1F-Vt7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aPQ-oD-MdF"/>
                             <constraint firstItem="6hs-by-IMW" firstAttribute="top" secondItem="ElH-xe-KI4" secondAttribute="bottom" constant="38" id="ajc-1E-4PK"/>
@@ -132,6 +145,7 @@
                         <outlet property="redSlider" destination="CfV-1F-Vt7" id="z5w-ki-7Pk"/>
                         <outlet property="redSliderLabel" destination="zfP-jz-NF4" id="mXe-HA-djQ"/>
                         <outlet property="redSquare" destination="Agf-ya-m4e" id="PzW-AL-usQ"/>
+                        <outlet property="redTextField" destination="aUB-J2-Urg" id="dFN-Ly-9yZ"/>
                         <outlet property="resetButtonBackground" destination="riq-yl-iPa" id="dJ0-hk-qos"/>
                     </connections>
                 </viewController>
